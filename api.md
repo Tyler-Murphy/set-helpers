@@ -154,7 +154,7 @@ and optional initial value.
 | Param | Type | Description |
 | --- | --- | --- |
 | set | <code>Set</code> | starting set |
-| reducer | <code>function</code> | reduction function, which is passed the reduced      value, current value, and entire set, in that order |
+| reducer | <code>[reduceCallback](#reduceCallback)</code> | reduction function, which is passed the reduced      value, current value, and entire set, in that order |
 | [initialValue] | <code>\*</code> | first value used for the reduced value passed      to reducer - the first value from the set will be used if not provided |
 
 <a name="some"></a>
