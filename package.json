@@ -6,7 +6,7 @@
     "tape": "^4.5.1"
   },
   "name": "set-helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helpers for Set objects.",
   "main": "index.js",
   "dependencies": {},
@@ -15,6 +15,9 @@
     "posttest": "rm -rf .nyc_output",
     "docs": "jsdoc2md functions/*.js > api.md",
     "precommit": "npm run test && npm run docs"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   },
   "keywords": [
     "set",
