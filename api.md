@@ -35,6 +35,9 @@ and optional initial value.</p>
 <dd><p>Returns true if some set element returns a truthy value when passed to the
 provided filter function, and false otherwise</p>
 </dd>
+<dt><a href="#toArray">toArray(set)</a> ⇒ <code>Array</code></dt>
+<dd><p>Turns a set into an array</p>
+</dd>
 <dt><a href="#union">union(...set)</a> ⇒ <code>Set</code></dt>
 <dd><p>Returns a set containing the union of all sets passed</p>
 </dd>
@@ -170,6 +173,17 @@ provided filter function, and false otherwise
 | --- | --- | --- |
 | set | <code>Set</code> |  |
 | filter | <code>[iteratorCallback](#iteratorCallback)</code> | function which is passed the current      value and the entire set |
+
+<a name="toArray"></a>
+
+## toArray(set) ⇒ <code>Array</code>
+Turns a set into an array
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| set | <code>Set</code> | 
 
 <a name="union"></a>
 
