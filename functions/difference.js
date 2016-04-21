@@ -9,11 +9,9 @@ module.exports = difference;
 function difference(set) {
     let result = new Set(set);
 
-    for (let setIndex = 1; setIndex < arguments.length; setIndex += 1) {
-        for (let value of arguments[setIndex].values()) {
-            result.delete(value);
-        }
-    }
+    Array.from(arguments).slice(1).forEach(set => {
+        set.forEach(value => result.delete(value));
+    });
 
     return result;
 }

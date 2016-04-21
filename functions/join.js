@@ -1,4 +1,6 @@
 // 'use strict';
+const toArray = require('./toArray.js');
+
 module.exports = join;
 
 /**
@@ -9,5 +11,5 @@ module.exports = join;
  *
  */
 function join(set, separator) {
-    return Array.from(set).join(separator);
+    return toArray(set).join(separator);
 }

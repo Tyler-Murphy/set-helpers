@@ -7,21 +7,22 @@ module.exports = intersection;
  * @return {Set} intersection of all provided sets
  */
 function intersection() {
-    let setSizes = Array.prototype.map.call(arguments, set => set.size),
+    let sets = Array.from(arguments),
+        setSizes = sets.map(set => set.size),
         smallestSetIndex = setSizes.indexOf(Math.min.apply(Math, setSizes)),
-        smallestSet = arguments[smallestSetIndex],
-        result = new Set;
+        smallestSet = sets[smallestSetIndex],
+        result = new Set(smallestSet);
 
-    for (let value of smallestSet.values()) {
-        let valueInAllSets = true;
-        for (let setIndex = 0; setIndex < arguments.length; setIndex += 1) {
-            if (!arguments[setIndex].has(value)) {
-                valueInAllSets = false;
+    sets.splice(smallestSetIndex, 1);
+
+    smallestSet.forEach(value => {
+        for (let i = 0; i < sets.length; i += 1) {
+            if (!sets[i].has(value)) {
+                result.delete(value);
                 break;
             }
         }
-        if (valueInAllSets) result.add(value);
-    }
+    });
 
     return result;
 }

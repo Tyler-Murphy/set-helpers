@@ -9,11 +9,9 @@ module.exports = union;
 function union() {
     let result = new Set;
 
-    for (let setIndex = 0; setIndex < arguments.length; setIndex += 1) {
-        for (let value of arguments[setIndex].values()) {
-            result.add(value);
-        }
-    }
+    Array.from(arguments).forEach(set => {
+        set.forEach(value => result.add(value));
+    });
 
     return result;
 }
