@@ -16,12 +16,18 @@ a truthy value</p>
 <dd><p>Returns the first set element causing the provided function to return truthy
 when passed</p>
 </dd>
+<dt><a href="#first">first(set)</a> ⇒ <code>*</code></dt>
+<dd><p>Returns the first element of a set</p>
+</dd>
 <dt><a href="#intersection">intersection(...set)</a> ⇒ <code>Set</code></dt>
 <dd><p>Returns the intersection of values in all sets passed</p>
 </dd>
 <dt><a href="#join">join(set, [separator])</a></dt>
 <dd><p>Joins the set elements using the provided separator, or a comma if no
 separator is provided</p>
+</dd>
+<dt><a href="#last">last(set)</a> ⇒ <code>*</code></dt>
+<dd><p>Returns the last element of a set</p>
 </dd>
 <dt><a href="#map">map(set, mapper)</a> ⇒ <code>Set</code></dt>
 <dd><p>Returns a new set created by calling a provided function with every element
@@ -106,6 +112,18 @@ when passed
 | set | <code>Set</code> |  |
 | finder | <code>[iteratorCallback](#iteratorCallback)</code> | function which is passed the current      value and the entire set |
 
+<a name="first"></a>
+
+## first(set) ⇒ <code>\*</code>
+Returns the first element of a set
+
+**Kind**: global function  
+**Returns**: <code>\*</code> - the set's first element  
+
+| Param | Type |
+| --- | --- |
+| set | <code>Set</code> | 
+
 <a name="intersection"></a>
 
 ## intersection(...set) ⇒ <code>Set</code>
@@ -130,6 +148,18 @@ separator is provided
 | --- | --- | --- | --- |
 | set | <code>Set</code> |  |  |
 | [separator] | <code>\*</code> | <code>&#x27;,&#x27;</code> | separator, which is passed to Array.prototype.join |
+
+<a name="last"></a>
+
+## last(set) ⇒ <code>\*</code>
+Returns the last element of a set
+
+**Kind**: global function  
+**Returns**: <code>\*</code> - the set's last element  
+
+| Param | Type |
+| --- | --- |
+| set | <code>Set</code> | 
 
 <a name="map"></a>
 
