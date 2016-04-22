@@ -22,6 +22,12 @@ when passed</p>
 <dt><a href="#intersection">intersection(...set)</a> ⇒ <code>Set</code></dt>
 <dd><p>Returns the intersection of values in all sets passed</p>
 </dd>
+<dt><a href="#isSubset">isSubset(set1, set2)</a> ⇒ <code>Boolean</code></dt>
+<dd><p>Returns true if the first set is a subset of the second, and false otherwise</p>
+</dd>
+<dt><a href="#isSuperset">isSuperset(set1, set2)</a> ⇒ <code>Boolean</code></dt>
+<dd><p>Returns true if the first set is a superset of the second, and false otherwise</p>
+</dd>
 <dt><a href="#join">join(set, [separator])</a></dt>
 <dd><p>Joins the set elements using the provided separator, or a comma if no
 separator is provided</p>
@@ -135,6 +141,32 @@ Returns the intersection of values in all sets passed
 | Param | Type |
 | --- | --- |
 | ...set | <code>Set</code> | 
+
+<a name="isSubset"></a>
+
+## isSubset(set1, set2) ⇒ <code>Boolean</code>
+Returns true if the first set is a subset of the second, and false otherwise
+
+**Kind**: global function  
+**Returns**: <code>Boolean</code> - true if set1 is a subset of set2, false otherwise  
+
+| Param | Type |
+| --- | --- |
+| set1 | <code>Set</code> | 
+| set2 | <code>Set</code> | 
+
+<a name="isSuperset"></a>
+
+## isSuperset(set1, set2) ⇒ <code>Boolean</code>
+Returns true if the first set is a superset of the second, and false otherwise
+
+**Kind**: global function  
+**Returns**: <code>Boolean</code> - true if set1 is a superset of set2, false otherwise  
+
+| Param | Type |
+| --- | --- |
+| set1 | <code>Set</code> | 
+| set2 | <code>Set</code> | 
 
 <a name="join"></a>
 
