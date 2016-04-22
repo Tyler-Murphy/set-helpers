@@ -1,5 +1,5 @@
 'use strict';
-require('../index.js')({ extendPrototype: ['map'] });
+const setHelpers = require('../index.js')({ extendPrototype: ['map'] });
 const Benchmark = require('benchmark');
 const range = require('lodash.range');
 
@@ -16,6 +16,10 @@ setSizes.forEach(size => {
 
     suite.add('Set#map', () => {
         set.map(value => value);
+    });
+
+    suite.add('setHelpers.map', () => {
+        setHelpers.map(set, value => value);
     });
 
     suite.on('cycle', event => console.log(event.target.toString()));
