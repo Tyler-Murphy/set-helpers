@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Tyler-Murphy/set-helpers.svg?branch=master)](https://travis-ci.org/Tyler-Murphy/set-helpers)
+
 This implements many array methods that are missing for `Set`s, like `map`, `reduce`, and `every`. It also adds some `Set`-specific functions like `intersection`. The complete list is in `functions/`.
 
 Almost everything is done with `Set` operations. There are no conversions to arrays and back.
