@@ -17,13 +17,13 @@ export function first<T>(set: Set<T>): T
 export function intersection<T>(set: Set<T>, ...sets: Array<Set<T>>): Set<T>
 
 /** Returns true if the first set is a subset of the second, and false otherwise */
-export function isSubset<T, U>(set1: Set<T>, set2: Set<U>): boolean
+export function isSubset(set1: Set<any>, set2: Set<any>): boolean
 
 /** Returns true if the first set is a superset of the second, and false otherwise */
-export function isSuperset<T, U>(set1: Set<T>, set2: Set<U>): boolean
+export function isSuperset(set1: Set<any>, set2: Set<any>): boolean
 
 /** Joins the set elements using the provided separator, or a comma if no separator is provided */
-export function join<T>(set: Set<T>, separator?: string): string
+export function join(set: Set<any>, separator?: string): string
 
 /** Returns the last element of a set */
 export function last<T>(set: Set<T>): T
